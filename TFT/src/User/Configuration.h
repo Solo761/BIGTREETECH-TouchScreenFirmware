@@ -81,6 +81,9 @@
 // Make the simulator run fullscreen, Not recommended for TFT24
 //#define ST7920_FULLSCREEN
 
+// Reduce vertical image stretch in 12864 mode on TFT24
+//#define ST920_TFT24_RATIO_FIX
+
 // Ability to print gcode from Board SD via Gcode functions.
 #define ONBOARD_SD_SUPPORT
 #ifdef ONBOARD_SD_SUPPORT

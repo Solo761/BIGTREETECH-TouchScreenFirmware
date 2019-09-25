@@ -17,7 +17,11 @@
 #define ST7920_YSTART    (0x80)
 
 #define LCD_XROWS 128.0f
-#define LCD_YROWS 64.0f
+#if !defined(ST7920_FULLSCREEN) || !defined(ST920_TFT24_RATIO_FIX)
+	#define LCD_YROWS 64.0f
+#else
+	#define LCD_YROWS 64
+#endif
 
 #ifndef ST7920_FULLSCREEN
  #define PIXEL_XSIZE     (MIN(LCD_WIDTH/128, LCD_HEIGHT/64))
