@@ -81,6 +81,9 @@
 // Make the simulator run fullscreen, Not recommended for TFT24
 //#define ST7920_FULLSCREEN
 
+// Fixes "region `RAM` overflowed" error when compiling on TFT24
+//#define TFT24_RAM_ERROR_FIX
+
 // Ability to print gcode from Board SD via Gcode functions.
 #define ONBOARD_SD_SUPPORT
 #ifdef ONBOARD_SD_SUPPORT
