@@ -12,8 +12,11 @@ static const char bsdprintingmagic[]   = "SD printing byte";
 static const char bsdnoprintingmagic[] = "Not SD printing";
 #endif
 
-
-#define ACK_MAX_SIZE 1024
+#ifdef TFT24_RAM_ERROR_FIX 
+	#define ACK_MAX_SIZE 300
+#else
+	#define ACK_MAX_SIZE 1024
+#endif
 
 void setCurrentAckSrc(uint8_t src);
 void parseACK(void);

@@ -84,6 +84,9 @@
 // Reduce vertical image stretch in 12864 mode on TFT24
 //#define ST920_TFT24_RATIO_FIX
 
+// Fixes "region `RAM` overflowed" error when compiling on TFT24
+//#define TFT24_RAM_ERROR_FIX
+
 // Ability to print gcode from Board SD via Gcode functions.
 #define ONBOARD_SD_SUPPORT
 #ifdef ONBOARD_SD_SUPPORT
